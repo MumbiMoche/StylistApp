@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Thestylist</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="description">A product description is the marketing copy used to describe a product\'s value proposition to potential customers. A compelling product description provides customers with details around features, problems it solves and other benefits to help generate a sale</string>
+</resources>

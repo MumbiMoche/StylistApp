@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/image_girls"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/young_girls"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_name"
+        android:text="Item Name"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/image_girls"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_price"
+        android:text="Item Name"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000fff"
+        android:layout_below="@+id/item_name"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Out"
+        android:id="@+id/check_out"
+        android:layout_below="@+id/item_price"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

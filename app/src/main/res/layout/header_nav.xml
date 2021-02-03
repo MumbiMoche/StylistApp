@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="horizontal"
+    android:background="#FF000000"
+    android:gravity="bottom"
+    android:padding="10dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:id="@+id/header_image"
+        android:src="@drawable/ic_baseline_directions_walk_24"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thestylist"
+        android:textSize="20sp"
+        android:id="@+id/user_name"
+        android:layout_below="@+id/header_image"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="thestylist@gmail.com"
+        android:textSize="20sp"
+        android:id="@+id/user_email"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="5dp"/>
+
+
+
+</RelativeLayout>

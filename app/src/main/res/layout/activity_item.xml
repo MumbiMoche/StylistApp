@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image_item"
+        android:src="@drawable/women"/>
+
+    <TextView
+        android:id="@+id/name_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/image_item"
+        android:text="Item name"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/price_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/name_item"
+        android:text="1000"
+        android:gravity="start"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/price_item"
+        android:text="@string/description"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to cart"
+        android:id="@+id/add_cart"
+        android:layout_below="@+id/description"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
