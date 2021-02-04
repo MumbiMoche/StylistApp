@@ -104,6 +104,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent_boys =  new Intent(MainActivity.this, BoysActivity.class);
                 startActivity(intent_boys);
                 break;
+
+            case R.id.ladies:
+                Intent intent_ladies =  new Intent(MainActivity.this, LadiesActivity.class);
+                startActivity(intent_ladies);
+                break;
+
+            case R.id.men:
+                Intent intent_men =  new Intent(MainActivity.this, MenActivity.class);
+                startActivity(intent_men);
+                break;
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

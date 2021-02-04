@@ -6,9 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".GirlsActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/tool_bar_cart">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Girls' Fashion"
+            android:textColor="#00ff00"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recycler_view"/>
+        android:id="@+id/recycler_view"
+        android:layout_below="@+id/tool_bar_cart"/>
 
 </RelativeLayout>

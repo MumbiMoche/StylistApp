@@ -11,25 +11,25 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class GirlsActivity extends AppCompatActivity {
+public class MenActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_girls);
-
+        setContentView(R.layout.activity_boys);
         ArrayList<Integer> images = new ArrayList<>();
 
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
-        images.add(R.drawable.young_girls);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
+        images.add(R.drawable.men);
 
         ArrayList<String> names = new ArrayList<>();
 
@@ -54,18 +54,17 @@ public class GirlsActivity extends AppCompatActivity {
         prices.add("1000");
         prices.add("1000");
 
-        Toolbar toolbar = findViewById(R.id.tool_bar_cart);
+        toolbar = findViewById(R.id.tool_bar_cart);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         TextView mTitle = toolbar.findViewById(R.id.toolbar_title);
 
-
-        recyclerView = findViewById(R.id.recycler_view);
-        GridLayoutManager gridLayoutManager= new GridLayoutManager(this, 2);
+        recyclerView = findViewById(R.id.recycler_view_boys);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(gridLayoutManager);
 
-        LayoutAdapter layoutAdapter = new LayoutAdapter(GirlsActivity.this, images, names, prices);
-        recyclerView.setAdapter(layoutAdapter);
+        BoysAdaptor boysAdaptor = new BoysAdaptor(this, images, names, prices);
+        recyclerView.setAdapter(boysAdaptor);
     }
 
     @Override
